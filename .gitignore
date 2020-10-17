@@ -7,6 +7,10 @@ lib-cov
 *.pid
 *.gz
 *.swp
+*.idea
+*.idea/
+output
+output/
 
 pids
 logs
