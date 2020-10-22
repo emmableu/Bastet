@@ -1,0 +1,78 @@
+digraph relation {
+    node [shape=circle, style=filled];
+    7008 [label="7008
+14
+26" shape=circle penwidth=1]
+    7009 [label="7009
+13
+28" shape=circle penwidth=1]
+    7010 [label="7010
+12
+30" shape=circle penwidth=1]
+    7011 [label="7011
+11
+32" shape=circle penwidth=1]
+    7012 [label="7012
+10
+34" shape=circle penwidth=1]
+    7013 [label="7013
+36
+15" shape=circle penwidth=1]
+    7014 [label="7014
+9
+36" shape=circle penwidth=1]
+    7015 [label="7015
+35
+16" shape=circle penwidth=1]
+    7016 [label="7016
+34
+17" shape=circle penwidth=1]
+    7017 [label="7017
+33
+18" shape=circle penwidth=1]
+    7018 [label="7018
+32
+19" shape=circle penwidth=1]
+    7019 [label="7019
+38
+14" shape=invtriangle penwidth=1]
+    7001 [label="7001
+8
+38" shape=doublecircle penwidth=1]
+    7002 [label="7002
+31
+20" shape=circle penwidth=1]
+    7003 [label="7003
+30
+21" shape=circle penwidth=1]
+    7004 [label="7004
+29
+22" shape=circle penwidth=1]
+    7005 [label="7005
+28
+23" shape=circle penwidth=1]
+    7006 [label="7006
+27
+24" shape=circle penwidth=1]
+    7007 [label="7007
+26
+25" shape=circle penwidth=1]
+    7019 -> 7013 [label="epsilon"];
+    7013 -> 7015 [label="declare nf as float"];
+    7015 -> 7016 [label="define nf as cast n as float"];
+    7016 -> 7017 [label="declare radians as float"];
+    7017 -> 7018 [label="declare __tmp_166 as float"];
+    7018 -> 7002 [label="define __tmp_166 as degToRad(90 - cast direction as float)"];
+    7002 -> 7003 [label="define radians as __tmp_166"];
+    7003 -> 7004 [label="declare dx as float"];
+    7004 -> 7005 [label="declare dy as float"];
+    7005 -> 7006 [label="declare __tmp_167 as float"];
+    7006 -> 7007 [label="define __tmp_167 as mathCos(radians)"];
+    7007 -> 7008 [label="define dx as nf * __tmp_167"];
+    7008 -> 7009 [label="declare __tmp_168 as float"];
+    7009 -> 7010 [label="define __tmp_168 as mathSin(radians)"];
+    7010 -> 7011 [label="define dy as nf * __tmp_168"];
+    7011 -> 7012 [label="define x as (x + cast dx as integer)"];
+    7012 -> 7014 [label="define y as (y + cast dy as integer)"];
+    7014 -> 7001 [label="RETURN"];
+}

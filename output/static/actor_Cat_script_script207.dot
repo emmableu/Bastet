@@ -1,0 +1,35 @@
+digraph relation {
+    node [shape=circle, style=filled];
+    6858 [label="6858
+6
+11" shape=circle penwidth=1]
+    6860 [label="6860
+5
+14" shape=circle penwidth=1]
+    6866 [label="6866
+4
+16" shape=doublecircle penwidth=1]
+    6862 [label="6862
+10
+10" shape=circle penwidth=1]
+    6867 [label="6867
+9
+13" shape=circle penwidth=1]
+    6863 [label="6863
+14
+8" shape=circle penwidth=1]
+    6864 [label="6864
+13
+9" shape=circle penwidth=1]
+    6865 [label="6865
+16
+7" shape=invtriangle penwidth=1]
+    6865 -> 6863 [label="epsilon"];
+    6863 -> 6864 [label="declare __tmp_208 as boolean"];
+    6864 -> 6862 [label="define __tmp_208 as touchingMousePointer()"];
+    6862 -> 6858 [label="assume __tmp_208"];
+    6862 -> 6867 [label="assume not __tmp_208"];
+    6867 -> 6860 [label="epsilon"];
+    6860 -> 6866 [label="epsilon"];
+    6858 -> 6860 [label="broadcast \"SPRITE_CLICK\"/self"];
+}

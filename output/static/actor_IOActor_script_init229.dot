@@ -1,0 +1,46 @@
+digraph relation {
+    node [shape=circle, style=filled];
+    8864 [label="8864
+8
+16" shape=circle penwidth=1]
+    8865 [label="8865
+7
+18" shape=circle penwidth=1]
+    8866 [label="8866
+6
+20" shape=circle penwidth=1]
+    8867 [label="8867
+22
+9" shape=invtriangle penwidth=1]
+    8868 [label="8868
+5
+22" shape=doublecircle penwidth=1]
+    8858 [label="8858
+21
+10" shape=circle penwidth=1]
+    8859 [label="8859
+20
+11" shape=circle penwidth=1]
+    8860 [label="8860
+19
+12" shape=circle penwidth=1]
+    8861 [label="8861
+18
+13" shape=circle penwidth=1]
+    8862 [label="8862
+17
+14" shape=circle penwidth=1]
+    8863 [label="8863
+16
+15" shape=circle penwidth=1]
+    8867 -> 8858 [label="epsilon"];
+    8858 -> 8859 [label="declare mouseX as integer"];
+    8859 -> 8860 [label="declare mouseY as integer"];
+    8860 -> 8861 [label="declare mouseDown as boolean"];
+    8861 -> 8862 [label="declare lastMouseDown as boolean"];
+    8862 -> 8863 [label="declare mouseClicked as boolean"];
+    8863 -> 8864 [label="declare keyPressed as integer"];
+    8864 -> 8865 [label="declare lastKeyPressed as integer"];
+    8865 -> 8866 [label="declare answer as string"];
+    8866 -> 8868 [label="epsilon"];
+}

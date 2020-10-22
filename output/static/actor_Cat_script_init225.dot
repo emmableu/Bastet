@@ -1,0 +1,130 @@
+digraph relation {
+    node [shape=circle, style=filled];
+    6112 [label="6112
+6
+60" shape=circle penwidth=1]
+    6113 [label="6113
+36
+45" shape=circle penwidth=1]
+    6114 [label="6114
+35
+46" shape=circle penwidth=1]
+    6115 [label="6115
+34
+47" shape=circle penwidth=1]
+    6116 [label="6116
+62
+32" shape=circle penwidth=1]
+    6117 [label="6117
+33
+48" shape=circle penwidth=1]
+    6118 [label="6118
+61
+33" shape=circle penwidth=1]
+    6119 [label="6119
+32
+49" shape=circle penwidth=1]
+    6120 [label="6120
+60
+34" shape=circle penwidth=1]
+    6121 [label="6121
+31
+50" shape=circle penwidth=1]
+    6122 [label="6122
+59
+35" shape=circle penwidth=1]
+    6123 [label="6123
+30
+51" shape=circle penwidth=1]
+    6124 [label="6124
+58
+36" shape=circle penwidth=1]
+    6125 [label="6125
+29
+52" shape=circle penwidth=1]
+    6126 [label="6126
+64
+31" shape=invtriangle penwidth=1]
+    6127 [label="6127
+4
+64" shape=doublecircle penwidth=1]
+    6096 [label="6096
+5
+63" shape=circle penwidth=1]
+    6097 [label="6097
+57
+37" shape=circle penwidth=1]
+    6098 [label="6098
+28
+53" shape=circle penwidth=1]
+    6099 [label="6099
+56
+38" shape=circle penwidth=1]
+    6100 [label="6100
+27
+54" shape=circle penwidth=1]
+    6101 [label="6101
+55
+39" shape=circle penwidth=1]
+    6102 [label="6102
+26
+55" shape=circle penwidth=1]
+    6103 [label="6103
+54
+40" shape=circle penwidth=1]
+    6104 [label="6104
+25
+56" shape=circle penwidth=1]
+    6105 [label="6105
+53
+41" shape=circle penwidth=1]
+    6106 [label="6106
+24
+57" shape=circle penwidth=1]
+    6107 [label="6107
+52
+42" shape=circle penwidth=1]
+    6108 [label="6108
+23
+58" shape=circle penwidth=1]
+    6109 [label="6109
+51
+43" shape=circle penwidth=1]
+    6110 [label="6110
+22
+59" shape=circle penwidth=1]
+    6111 [label="6111
+50
+44" shape=circle penwidth=1]
+    6126 -> 6116 [label="epsilon"];
+    6116 -> 6118 [label="declare soundEffect as enum [\"pitch\", \"panLeftRight\"]"];
+    6118 -> 6120 [label="declare pitchEffectValue as float"];
+    6120 -> 6122 [label="declare panLeftRightValue as float"];
+    6122 -> 6124 [label="declare volume as integer"];
+    6124 -> 6097 [label="declare layer as integer"];
+    6097 -> 6099 [label="declare activeGraphicPixels as list of integer"];
+    6099 -> 6101 [label="declare activeGraphicIndex as integer"];
+    6101 -> 6103 [label="declare activeGraphicName as string"];
+    6103 -> 6105 [label="declare activeGraphicWidth as integer"];
+    6105 -> 6107 [label="declare activeGraphicHeight as integer"];
+    6107 -> 6109 [label="declare activeGraphicHalfWidth as integer"];
+    6109 -> 6111 [label="declare activeGraphicHalfHeight as integer"];
+    6111 -> 6113 [label="declare graphicsEffect as enum [\"color\", \"fisheye\", \"whirl\", \"pixelate\", \"mosaic\", \"brightness\", \"ghost\"]"];
+    6113 -> 6114 [label="declare colorEffectValue as float"];
+    6114 -> 6115 [label="declare fisheyeEffectValue as float"];
+    6115 -> 6117 [label="declare whirlEffectValue as float"];
+    6117 -> 6119 [label="declare pixelateEffectValue as float"];
+    6119 -> 6121 [label="declare mosaicEffectValue as float"];
+    6121 -> 6123 [label="declare brightnessEffectValue as float"];
+    6123 -> 6125 [label="declare ghostEffectValue as float"];
+    6125 -> 6098 [label="declare STAGE_WIDTH as integer"];
+    6098 -> 6100 [label="declare STAGE_HEIGHT as integer"];
+    6100 -> 6102 [label="declare STAGE_HALF_WIDTH as integer"];
+    6102 -> 6104 [label="declare STAGE_HALF_HEIGHT as integer"];
+    6104 -> 6106 [label="define STAGE_WIDTH as 480"];
+    6106 -> 6108 [label="define STAGE_HEIGHT as 360"];
+    6108 -> 6110 [label="define STAGE_HALF_WIDTH as 240"];
+    6110 -> 6112 [label="define STAGE_HALF_HEIGHT as 180"];
+    6112 -> 6096 [label="define colorEffectValue as 0"];
+    6096 -> 6127 [label="epsilon"];
+}

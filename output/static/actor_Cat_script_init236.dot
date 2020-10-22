@@ -1,0 +1,38 @@
+digraph relation {
+    node [shape=circle, style=filled];
+    8992 [label="8992
+4
+16" shape=circle penwidth=1]
+    8993 [label="8993
+16
+10" shape=circle penwidth=1]
+    8994 [label="8994
+15
+11" shape=circle penwidth=1]
+    8995 [label="8995
+14
+12" shape=circle penwidth=1]
+    8996 [label="8996
+13
+13" shape=circle penwidth=1]
+    8997 [label="8997
+12
+14" shape=circle penwidth=1]
+    8998 [label="8998
+11
+15" shape=circle penwidth=1]
+    8999 [label="8999
+18
+9" shape=invtriangle penwidth=1]
+    9000 [label="9000
+3
+18" shape=doublecircle penwidth=1]
+    8999 -> 8993 [label="epsilon"];
+    8993 -> 8994 [label="define x as 126"];
+    8994 -> 8995 [label="define y as 0"];
+    8995 -> 8996 [label="define size as 100"];
+    8996 -> 8997 [label="define direction as 90"];
+    8997 -> 8998 [label="define draggable as false"];
+    8998 -> 8992 [label="define rotationStyle as \"all around\""];
+    8992 -> 9000 [label="epsilon"];
+}

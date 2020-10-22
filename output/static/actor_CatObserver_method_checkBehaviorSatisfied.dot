@@ -1,0 +1,31 @@
+digraph relation {
+    node [shape=circle, style=filled];
+    9098 [label="9098
+10
+7" shape=circle penwidth=1]
+    9097 [label="9097
+7
+8" shape=circle penwidth=1]
+    9103 [label="9103
+9
+10" shape=circle penwidth=1]
+    9101 [label="9101
+6
+12" shape=circle penwidth=1]
+    9095 [label="9095
+5
+14" shape=doublecircle penwidth=1]
+    9100 [label="9100
+12
+6" shape=circle penwidth=1]
+    9102 [label="9102
+14
+5" shape=invtriangle penwidth=1]
+    9102 -> 9100 [label="epsilon"];
+    9100 -> 9098 [label="define catX as cast attribute \"x\" of cat as integer"];
+    9098 -> 9097 [label="assume catX > startX"];
+    9098 -> 9103 [label="assume not catX > startX"];
+    9103 -> 9101 [label="epsilon"];
+    9101 -> 9095 [label="RETURN"];
+    9097 -> 9101 [label="REACHED (\"cat is moving right\")"];
+}

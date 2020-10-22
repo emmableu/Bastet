@@ -1,0 +1,38 @@
+digraph relation {
+    node [shape=circle, style=filled];
+    9064 [label="9064
+4
+16" shape=circle penwidth=1]
+    9065 [label="9065
+12
+12" shape=circle penwidth=1]
+    9066 [label="9066
+11
+13" shape=circle penwidth=1]
+    9067 [label="9067
+10
+14" shape=circle penwidth=1]
+    9068 [label="9068
+9
+15" shape=circle penwidth=1]
+    9069 [label="9069
+16
+10" shape=circle penwidth=1]
+    9070 [label="9070
+15
+11" shape=circle penwidth=1]
+    9071 [label="9071
+18
+9" shape=invtriangle penwidth=1]
+    9072 [label="9072
+3
+18" shape=doublecircle penwidth=1]
+    9071 -> 9069 [label="epsilon"];
+    9069 -> 9070 [label="define cat as locate actor \"Cat\""];
+    9070 -> 9065 [label="define startX as cast attribute \"x\" of cat as integer"];
+    9065 -> 9066 [label="declare __tmp_239 as integer"];
+    9066 -> 9067 [label="define __tmp_239 as _RUNTIME_micros()"];
+    9067 -> 9068 [label="define game_start_time as __tmp_239"];
+    9068 -> 9064 [label="checkBehaviorSatisfied()"];
+    9064 -> 9072 [label="epsilon"];
+}

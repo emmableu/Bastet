@@ -1,0 +1,46 @@
+digraph relation {
+    node [shape=circle, style=filled];
+    256 [label="256
+8
+16" shape=circle penwidth=1]
+    257 [label="257
+7
+18" shape=circle penwidth=1]
+    258 [label="258
+22
+9" shape=invtriangle penwidth=1]
+    259 [label="259
+5
+22" shape=doublecircle penwidth=1]
+    249 [label="249
+6
+21" shape=circle penwidth=1]
+    250 [label="250
+21
+10" shape=circle penwidth=1]
+    251 [label="251
+20
+11" shape=circle penwidth=1]
+    252 [label="252
+19
+12" shape=circle penwidth=1]
+    253 [label="253
+18
+13" shape=circle penwidth=1]
+    254 [label="254
+17
+14" shape=circle penwidth=1]
+    255 [label="255
+16
+15" shape=circle penwidth=1]
+    258 -> 250 [label="epsilon"];
+    250 -> 251 [label="declare PI as float"];
+    251 -> 252 [label="declare PI_HALF as float"];
+    252 -> 253 [label="declare PI_SQR_TIMES_FIVE as float"];
+    253 -> 254 [label="declare TWO_PI as float"];
+    254 -> 255 [label="define PI as 3.14159265359"];
+    255 -> 256 [label="define TWO_PI as 6.28318530718"];
+    256 -> 257 [label="define PI_HALF as 1.570796326795"];
+    257 -> 249 [label="define PI_SQR_TIMES_FIVE as 49.34802200545329"];
+    249 -> 259 [label="epsilon"];
+}

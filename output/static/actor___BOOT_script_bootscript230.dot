@@ -1,0 +1,22 @@
+digraph relation {
+    node [shape=circle, style=filled];
+    8970 [label="8970
+10
+3" shape=invtriangle penwidth=1]
+    8971 [label="8971
+9
+4" shape=circle penwidth=1]
+    8972 [label="8972
+8
+6" shape=circle penwidth=1]
+    8973 [label="8973
+7
+8" shape=circle penwidth=1]
+    8969 [label="8969
+6
+10" shape=doublecircle penwidth=1]
+    8970 -> 8971 [label="initialize analysis"];
+    8971 -> 8972 [label="broadcast \"__BOOTSTRAP\"/\"\"SYSTEM\"\" and wait"];
+    8972 -> 8973 [label="broadcast \"__BOOTSTRAP_FINISHED\"/\"\"SYSTEM\"\" and wait"];
+    8973 -> 8969 [label="broadcast \"__STARTUP\"/\"\"SYSTEM\"\""];
+}

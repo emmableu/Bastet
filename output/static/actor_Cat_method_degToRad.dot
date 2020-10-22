@@ -1,0 +1,22 @@
+digraph relation {
+    node [shape=circle, style=filled];
+    5056 [label="5056
+8
+5" shape=circle penwidth=1]
+    5057 [label="5057
+7
+6" shape=circle penwidth=1]
+    5058 [label="5058
+6
+8" shape=circle penwidth=1]
+    5055 [label="5055
+5
+10" shape=doublecircle penwidth=1]
+    5059 [label="5059
+10
+4" shape=invtriangle penwidth=1]
+    5059 -> 5056 [label="epsilon"];
+    5056 -> 5057 [label="declare result as float"];
+    5057 -> 5058 [label="define result as deg * 0.01745329252"];
+    5058 -> 5055 [label="RETURN"];
+}

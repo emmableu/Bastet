@@ -1,0 +1,30 @@
+digraph relation {
+    node [shape=circle, style=filled];
+    9045 [label="9045
+12
+5" shape=circle penwidth=1]
+    9046 [label="9046
+11
+6" shape=circle penwidth=1]
+    9047 [label="9047
+10
+8" shape=circle penwidth=1]
+    9048 [label="9048
+9
+10" shape=circle penwidth=1]
+    9049 [label="9049
+8
+12" shape=circle penwidth=1]
+    9051 [label="9051
+7
+14" shape=doublecircle penwidth=1]
+    9050 [label="9050
+14
+4" shape=invtriangle penwidth=1]
+    9050 -> 9045 [label="epsilon"];
+    9045 -> 9046 [label="declare catX as integer"];
+    9046 -> 9047 [label="declare startX as integer"];
+    9047 -> 9048 [label="declare cat as actor"];
+    9048 -> 9049 [label="declare game_start_time as integer"];
+    9049 -> 9051 [label="epsilon"];
+}

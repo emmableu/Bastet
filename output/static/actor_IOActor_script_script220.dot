@@ -1,0 +1,38 @@
+digraph relation {
+    node [shape=circle, style=filled];
+    8881 [label="8881
+4
+16" shape=circle penwidth=1]
+    8882 [label="8882
+16
+10" shape=circle penwidth=1]
+    8883 [label="8883
+15
+11" shape=circle penwidth=1]
+    8884 [label="8884
+14
+12" shape=circle penwidth=1]
+    8885 [label="8885
+13
+13" shape=circle penwidth=1]
+    8886 [label="8886
+12
+14" shape=circle penwidth=1]
+    8887 [label="8887
+11
+15" shape=circle penwidth=1]
+    8888 [label="8888
+18
+9" shape=invtriangle penwidth=1]
+    8889 [label="8889
+3
+18" shape=doublecircle penwidth=1]
+    8888 -> 8882 [label="epsilon"];
+    8882 -> 8883 [label="declare nondetStr as string"];
+    8883 -> 8884 [label="define answer as nondetStr"];
+    8884 -> 8885 [label="declare inputDurationSecs as integer"];
+    8885 -> 8886 [label="assume inputDurationSecs > 0"];
+    8886 -> 8887 [label="assume inputDurationSecs < 30"];
+    8887 -> 8881 [label="waitSeconds(inputDurationSecs)"];
+    8881 -> 8889 [label="epsilon"];
+}

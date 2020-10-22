@@ -1,0 +1,34 @@
+digraph relation {
+    node [shape=circle, style=filled];
+    6634 [label="6634
+12
+7" shape=circle penwidth=1]
+    6635 [label="6635
+11
+8" shape=circle penwidth=1]
+    6636 [label="6636
+10
+10" shape=circle penwidth=1]
+    6637 [label="6637
+9
+12" shape=circle penwidth=1]
+    6633 [label="6633
+8
+14" shape=circle penwidth=1]
+    6640 [label="6640
+7
+16" shape=doublecircle penwidth=1]
+    6638 [label="6638
+14
+6" shape=circle penwidth=1]
+    6639 [label="6639
+16
+5" shape=invtriangle penwidth=1]
+    6639 -> 6638 [label="epsilon"];
+    6638 -> 6634 [label="declare currentIdx as integer"];
+    6634 -> 6635 [label="declare videoTransparency as integer"];
+    6635 -> 6636 [label="declare videoState as string"];
+    6636 -> 6637 [label="declare tempo as integer"];
+    6637 -> 6633 [label="define currentIdx as 0"];
+    6633 -> 6640 [label="epsilon"];
+}

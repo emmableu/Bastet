@@ -1,0 +1,10 @@
+digraph relation {
+    node [shape=circle, style=filled];
+    9031 [label="9031
+4
+3" shape=invtriangle penwidth=1]
+    9030 [label="9030
+3
+4" shape=doublecircle penwidth=1]
+    9031 -> 9030 [label="epsilon"];
+}

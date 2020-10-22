@@ -1,0 +1,30 @@
+digraph relation {
+    node [shape=circle, style=filled];
+    5981 [label="5981
+12
+5" shape=circle penwidth=1]
+    5982 [label="5982
+11
+6" shape=circle penwidth=1]
+    5983 [label="5983
+10
+8" shape=circle penwidth=1]
+    5984 [label="5984
+9
+10" shape=circle penwidth=1]
+    5985 [label="5985
+8
+12" shape=circle penwidth=1]
+    5980 [label="5980
+7
+14" shape=doublecircle penwidth=1]
+    5986 [label="5986
+14
+4" shape=invtriangle penwidth=1]
+    5986 -> 5981 [label="epsilon"];
+    5981 -> 5982 [label="declare result as integer"];
+    5982 -> 5983 [label="declare io as actor"];
+    5983 -> 5984 [label="define io as locate actor \"IOActor\""];
+    5984 -> 5985 [label="define result as cast attribute \"keyPressed\" of io as integer"];
+    5985 -> 5980 [label="RETURN"];
+}

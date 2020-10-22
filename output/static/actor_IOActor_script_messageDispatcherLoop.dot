@@ -1,0 +1,85 @@
+digraph relation {
+    node [shape=circle, style=filled];
+    8960 [label="8960
+38
+40" shape=circle penwidth=1]
+    8938 [label="8938
+28
+31" shape=circle penwidth=1]
+    8939 [label="8939
+32
+25" shape=circle penwidth=1]
+    8940 [label="8940
+27
+32" shape=circle penwidth=1]
+    8942 [label="8942
+33
+22" shape=circle penwidth=1]
+    8943 [label="8943
+26
+33" shape=circle penwidth=1]
+    8944 [label="8944
+36
+21" shape=circle penwidth=1]
+    8945 [label="8945
+25
+34" shape=circle penwidth=1]
+    8946 [label="8946
+24
+35" shape=circle penwidth=1]
+    8947 [label="8947
+31
+26" shape=circle penwidth=1]
+    8948 [label="8948
+23
+36" shape=circle penwidth=1]
+    8950 [label="8950
+22
+37" shape=circle penwidth=1]
+    8951 [label="8951
+21
+38" shape=circle penwidth=1]
+    8952 [label="8952
+20
+39" shape=circle penwidth=1]
+    8953 [label="8953
+19
+19" shape=circle penwidth=1]
+    8955 [label="8955
+37
+20" shape=circle penwidth=1]
+    8956 [label="8956
+30
+41" shape=egg penwidth=3]
+    8957 [label="8957
+29
+30" shape=circle penwidth=1]
+    8958 [label="8958
+40
+28" shape=invtriangle penwidth=1]
+    8959 [label="8959
+35
+24" shape=circle penwidth=1]
+    8958 -> 8956 [label="epsilon"];
+    8956 -> 8957 [label="declare nondetX as integer"];
+    8957 -> 8938 [label="define mouseX as nondetX"];
+    8938 -> 8940 [label="declare nondetY as integer"];
+    8940 -> 8943 [label="define mouseY as nondetY"];
+    8943 -> 8945 [label="declare nondetKey as integer"];
+    8945 -> 8946 [label="define keyPressed as nondetKey"];
+    8946 -> 8948 [label="declare nondetDown as boolean"];
+    8948 -> 8950 [label="define mouseDown as nondetDown"];
+    8950 -> 8951 [label="declare __tmp_221 as boolean"];
+    8951 -> 8952 [label="define __tmp_221 as mouseDown"];
+    8952 -> 8953 [label="assume __tmp_221"];
+    8952 -> 8960 [label="assume not __tmp_221"];
+    8960 -> 8955 [label="epsilon"];
+    8955 -> 8944 [label="define mouseClicked as __tmp_221"];
+    8944 -> 8942 [label="assume mouseClicked"];
+    8944 -> 8959 [label="assume not mouseClicked"];
+    8959 -> 8939 [label="epsilon"];
+    8939 -> 8947 [label="define lastKeyPressed as keyPressed"];
+    8947 -> 8956 [label="define lastMouseDown as mouseDown"];
+    8942 -> 8939 [label="broadcast \"CLICK\"/\"\"\"SYSTEM\"\"\""];
+    8953 -> 8955 [label="define __tmp_221 as not lastMouseDown"];
+}

@@ -1,0 +1,28 @@
+digraph relation {
+    node [shape=circle, style=filled];
+    9024 [label="9024
+10
+13" shape=egg penwidth=3]
+    9020 [label="9020
+9
+12" shape=circle penwidth=1]
+    9021 [label="9021
+8
+5" shape=circle penwidth=1]
+    9022 [label="9022
+5
+6" shape=circle penwidth=1]
+    9026 [label="9026
+7
+10" shape=circle penwidth=1]
+    9025 [label="9025
+12
+8" shape=invtriangle penwidth=1]
+    9025 -> 9024 [label="epsilon"];
+    9024 -> 9020 [label="declare __tmp_234 as boolean"];
+    9020 -> 9021 [label="define __tmp_234 as keyPressedByCode(39)"];
+    9021 -> 9022 [label="assume __tmp_234"];
+    9021 -> 9026 [label="assume not __tmp_234"];
+    9026 -> 9024 [label="epsilon"];
+    9022 -> 9024 [label="moveSteps(10)"];
+}
